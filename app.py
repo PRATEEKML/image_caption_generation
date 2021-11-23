@@ -1,7 +1,8 @@
 from flask import Flask,redirect,request,render_template,url_for
-from model_script import gen_caption
+from model_script import CaptionModel
 
 app=Flask(__name__)
+global model
 
 @app.route('/')
 def home():
@@ -16,8 +17,9 @@ def req():
 	if request.method=="POST":
 		f=request.files['pic']
 		f.save('./static/'+f.filename)
-		caption='Seems like , '+gen_caption('./static/'+f.filename)
+		caption=model.predict_cation('./static/'+f.filename)
 		return render_template('submit.html',pic=f.filename,caption=caption)
 
 if __name__=='__main__':
+	model=CaptionModel()
 	app.run(debug=True)
