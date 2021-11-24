@@ -16,7 +16,7 @@ model_training/train_description.pkl
 model_training/val_description.pkl 
 
 # User images
-static/user/*
+
 
 # Vagrant
 .vagrant/
