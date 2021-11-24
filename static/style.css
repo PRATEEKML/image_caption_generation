@@ -1,20 +1,142 @@
-body
-{
-	background-color:rgb(251,159,244);
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
 }
 
-h1.intro
-{
-	background-color:rgb(0,0,244);
-	font-weight:lighter;
-	font-size:30px;
-	color:rgb(255,255,255);
-	font-family:verdana;
+/* header start */
+.header{
+	width: 100%;
+	height: 100px;
+	display: block;
+	background-color: #2f4f4f;
+	display: flex;
+	justify-content: left;
 }
-p.foot{
-	position: absolute;
-	top:600px;
-	right:0px;
-	width:225px;
-	height:50px;
+header h1{
+	display: flex;
+}
+#logo{
+	height: 80px;
+	width:80px;
+	display: inline;
+	float: left;
+	line-height: 0;
+	margin: 10px;
+}
+.text{
+	text-align: right;
+      white-space: nowrap;
+      display: inline;
+      float: left;
+      margin-top: 20px;
+      margin-right: 30px;
+	  margin-bottom: 2px;
+      font-size: 20px;
+	  color: aliceblue;
+	  font-family: verdana;
+}
+.text-2{
+	text-align: right;
+      white-space: nowrap;
+      display: inline;
+      float: right;
+      margin-top: 20px;
+      margin-left: 300px;
+	  margin-bottom: 2px;
+	  margin-top: 35px;
+      font-size: 20px;
+	  color: aliceblue;
+	  font-family: verdana;
+}
+/* header end */
+
+/* middle-box */
+.container{
+	width: 480px;
+	height: 390px;
+	margin: 100px auto;
+	background:#2f4f4f ;
+	position: relative;
+	border-radius: 35px;
+	border: 2px solid red;
+	inline-size: 480px;	
+	box-sizing: content-box;
+}
+
+.container2{
+	width: 480px;
+	height: 380px;
+	margin-top: 80px ;
+	margin: 100px auto;
+	background:#2f4f4f ;
+	position: relative;
+	border-radius: 35px;
+	border: 2px solid red;
+	inline-size: 480px;	
+	box-sizing: content-box;
+}
+.container h3{
+
+	font-family: Verdana;
+	font-size: 15px;
+	color: aliceblue;
+	margin: 10px;
+	padding: 5px;
+	inline-size: 480px;
+	
+}
+.upload-box{
+	font-size: 18px;
+	background: white;
+	border-radius: 50px;
+	box-shadow: 5px 5px 10px black;
+	width: 350px;
+	outline:none;
+	margin-left: 20px;
+	margin-top: 60px;
+}
+::file-selector-button{
+	color: white;
+	background: darkorange ;
+	padding: 20px;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 1px 0 1px 1px #6b4559;
+	outline: none;
+}
+::file-selector-button:hover{
+	background : orange;
+}
+
+.upload-submit{
+	font-size: 15px;
+	background: white;
+	border-radius: 50px;
+	box-shadow: 5px 5px 10px black;
+	width: 60px;
+	outline:none;
+
+}
+
+.your{
+	margin-left: 70px;
+	width: 330px;
+	height: 300px;
+	margin-top: 25px;
+}
+
+.caption{
+	font-family: Verdana;
+	font-size: 15px;
+	padding-left: 38px;
+	color: aliceblue;
+	margin-left: 30px;
+}
+
+.block{
+	color: aliceblue;
+	font-family: verdana;
+	text-align: center;
 }

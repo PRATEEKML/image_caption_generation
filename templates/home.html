@@ -8,18 +8,28 @@
 	<link rel="shortcut icon" href="{{url_for('static',filename='logo.ico')}}">
 </head>
 <body>
-	<img src="{{url_for('static',filename='bot.png')}}" width="100px" height="100px">
-	<h1 class="intro">SOFT COMPUTING INNOVATIVE PROJECT!! GENERATING CAPTION ON IMAGES USING CNN and NLP</h1>
+	<div class="header">
+		<div >
+			<img src="{{url_for('static',filename='bot.png')}}" id="logo">
+		</div>
+		<div class="text">
+			<h1 >GENERATING CAPTION ON IMAGES </h1>
+		</div>
+		<div class="text-2">
+		<form method="get" action="/about" >
+			<input type="submit" value="About" class="upload-submit">
+		</form>
+		</div>
+	</div>
 	<br>
-	<div>
+	<div class="container">
+		<br>
 		<h3>Press browse to select the image you want to upload. Then press upload button to get description(only jpg and png images are supported).</h3>
-		<form method="Post" action='/submit' enctype="multipart/form-data">
-			<input type="file" name="pic">
-			<input type="submit" value="Upload">
+		<br>
+		<form method="post" action="/submit" enctype="multipart/form-data">
+			<input type="file" name="pic" class="upload-box">&nbsp;
+			<input type="submit" value="Upload" class="upload-submit">
 		</form>
 	</div>
-	<p class="foot">
-		<b>MADE BY:PRATEEK KUMAR Roll No:<i>&nbsp&nbsp2K18/CO/255</i></b>
-	</P>
 </body>
 </html>
